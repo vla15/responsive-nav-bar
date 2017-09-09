@@ -3,35 +3,42 @@
 
 body {
   margin: 0;
+  top: 0;
+  left: 0;
 }
 
 
 .wrapper {
+  margin: auto;
   display: flex;
-  flex-flow: column wrap;
-  padding: 0;
   background-color: deepskyblue;
 }
 
+a {
+  display: none;
+  text-decoration: none;
+  color: white;
+}
 
-.nav-item {
+.wrapper li {
+  list-style: none;
   display: block;
   text-decoration: none;
   padding: 1em;
   font-size: 15px;
   text-align: center;
   color: white;
-  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+/*  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);*/
 }
 
 .nav-item:last-of-type {
   border-bottom: none;
 }
 
-.nav-item:hover {
+/*.wrapper li:hover {
   background-color: green;
-}
+}*/
 
 @media all and (min-width: 728px) {
   .wrapper {
