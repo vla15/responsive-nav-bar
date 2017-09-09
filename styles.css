@@ -17,10 +17,12 @@ body {
 
 .menu-icon {
   display: block;
+  order: 1;
   font-size: 40px;
   align-self: center;
   padding-right: 10px;
 }
+
 
 .wrapper {
   display: none;
@@ -34,11 +36,33 @@ body {
   font-size: 15px;
   text-align: center;
   color: white;
-/*  border-top: 1px solid rgba(255, 255, 255, 0.3);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);*/
 }
 
-.nav-item:last-of-type {
+.wrapper-opened {
+  display: flex;
+  margin: 0;
+  height: 100vh;
+  flex-flow: column wrap;
+  width: 100%;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 45px;
+}
+
+.wrapper-opened a {
+  background-color: deepskyblue;
+  display: block;
+  text-decoration: none;
+  padding: 1em;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.wrapper a:last-of-type {
   border-bottom: none;
 }
 
