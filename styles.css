@@ -23,6 +23,10 @@ body {
   padding-right: 10px;
 }
 
+.menu-icon:hover {
+  cursor: pointer;
+}
+
 
 .wrapper {
   display: none;
