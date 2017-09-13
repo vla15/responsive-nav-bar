@@ -16,11 +16,12 @@ body {
 }
 
 .menu-icon {
+  text-align: right;
+  clear: both;
   display: block;
-  order: 1;
   font-size: 40px;
-  align-self: center;
-  padding-right: 10px;
+  background-color: deepskyblue;
+  transition: all .1s linear;
 }
 
 .menu-icon:hover {
@@ -43,19 +44,18 @@ body {
 }
 
 .wrapper-opened {
+  transition: all 1s linear;
   display: flex;
   margin: 0;
   height: 100vh;
-  flex-flow: column wrap;
+  flex-direction: column;
   width: 100%;
   list-style: none;
   padding-left: 0;
-  margin-top: 45px;
 }
 
 .wrapper-opened a {
   background-color: deepskyblue;
-  display: block;
   text-decoration: none;
   padding: 1em;
   font-size: 15px;
@@ -63,6 +63,11 @@ body {
   color: white;
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  transition: all .7s linear;
+/*  transition-all: all;
+  transition-duration: 2s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);*/
 }
 
 
@@ -71,8 +76,7 @@ body {
 }
 
 
-
-@media all and (min-width: 540px) {
+@media only screen and (min-width: 40.063em) {
   .menu-icon {
     display: none;
   }
@@ -87,7 +91,7 @@ body {
   }
 }
 
-@media all and (min-width: 980px) {
+@media only screen and (min-width: 64.063em) {
   .wrapper {
     justify-content: flex-end;
   }
